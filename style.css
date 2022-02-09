@@ -37,6 +37,7 @@ nav {
 .logo {
   width: 190px;
   margin-right: 45px;
+  cursor: pointer;
 }
 .nav-left,
 .nav-right {
@@ -256,15 +257,15 @@ nav {
 }
 .story3 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    url(./images/warren-wong-jgaVXPv9soI-unsplash.jpg);
+    url(./images/rup1.jpeg);
 }
 .story4 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    url(./images/roberto-nickson-zu95jkyrGtw-unsplash.jpg);
+    url(./images/ritik1.jpeg);
 }
 .story5 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-    url(./images/W\ status.jpg);
+    url(./images/ww10.jpg);
 }
 .story6 {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
@@ -374,6 +375,7 @@ nav {
 .post-profile-icon {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .post-profile-icon img {
   width: 20px;
@@ -642,7 +644,108 @@ nav {
   position: absolute;
   bottom: 0;
   left: 0;
+  cursor: pointer;
+  color:#626262;
 }
 .profile-visit{
   font-size: 10px;
+}
+
+
+/*--------------------- Media Query for home page ---------------- */
+@media (max-width: 900px){
+  .right-sidebar{
+    display: none;
+  }
+  .left-sidebar{
+    display: none;
+  }
+  nav{
+    flex-wrap: wrap;
+  }
+  .search-box{
+    display: none;
+  }.logo{
+    width: 110px;
+    margin-right: 20px;
+  }
+  .nav-left ul li img{
+    width: 20px;
+    margin: 0 8px;
+  }
+  .nav-user-icon img{
+    width: 30px;
+  }
+  .nav-user-icon{
+    margin-left: 0;
+  }
+  .add-post-links{
+    flex-wrap: wrap;
+  }
+  .main-content{
+    flex-basis: 100%;
+  }
+  .story img{
+    width: 30px;
+    border-width: 3px;
+  }
+  .story p{
+    font-size: 12px;
+  }
+  .story.story1 img{
+    width: 20px;
+    bottom: 30px;
+  }
+  .add-post-links a{
+    margin-right: 12px;
+    font-size: 9px;
+  }
+  .add-post-links a img{
+    width: 16px;
+    margin-right: 5px;
+  }
+  .post-input-container{
+    padding-left: 0;
+  }
+}
+
+/* --------------- Media Query for profile page ---------------- */
+@media (max-width: 900px){
+  .profile-container{
+    padding: 20px 5%;
+  }
+  .profile-details{
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .pd-right{
+    text-align: left;
+    margin-top: 15px;
+  }
+  .pd-right button{
+    margin-left: 0;
+    margin-right: 10px;
+    padding: 5px 8px;
+  }
+  .pd-right a{
+    margin: 10px;
+    padding: 6px;
+  }
+  .pd-row div h3{
+    font-size: 16px;
+  }
+  .profile-info{
+    flex-wrap: wrap;
+  }
+  .info-col, .post-col{
+    flex-basis: 100%;
+  }
+  .pd-image{
+    width: 80px;
+  }
+}
+@media (max-width:1300px){
+  .friends-box p{
+    font-size: 10px;
+  }
 }
